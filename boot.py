@@ -9,7 +9,7 @@ from aiohttp import web
 # --- CONFIGURATION ---
 API_TOKEN = '8779215618:AAGrO46Vahb7tP2SGwL0GHV2uLpgbK9oi3Y'
 ADMIN_ID = 8539013019
-MONGO_URL = "mongodb+srv://BIBIN:Bibin@123@cluster0.mnpq2pv.mongodb.net/?appName=Cluster0"
+MONGO_URL = "mongodb+srv://BIBIN:BIBIN@cluster0.mnpq2pv.mongodb.net/?appName=Cluster0"
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
