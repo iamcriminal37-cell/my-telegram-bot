@@ -11,7 +11,7 @@ from aiohttp import web
 API_TOKEN = '8779215618:AAGrO46Vahb7tP2SGwL0GHV2uLpgbK9oi3Y'
 ADMIN_ID = 8539013019
 # താഴെ നിങ്ങളുടെ ശരിക്കുള്ള പാസ്‌വേഡ് ചേർക്കാൻ മറക്കരുത്
-MONGO_URL = "mongodb+srv://BIBIN:നിങ്ങളുടെ_പാസ്‌വേഡ്@cluster0.mnpq2pv.mongodb.net/?retryWrites=true&w=majority"
+MONGO_URL = "mongodb+srv://BIBIN:Bibin123@cluster0.mnpq2pv.mongodb.net/?retryWrites=true&w=majority"
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
