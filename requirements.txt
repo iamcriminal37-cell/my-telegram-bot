@@ -1,4 +1,5 @@
 aiogram
 motor
 aiohttp
+google-generativeai
 dnspython
