@@ -1,3 +1,4 @@
+import os
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher, types, F
@@ -87,23 +88,15 @@ async def main():
 
 if __name__ == '__main__':
     async def main():
-    # Render നൽകുന്ന പോർട്ട് എടുക്കാൻ os ഇമ്പോർട്ട് ചെയ്യുന്നു
-    import os
-    port = int(os.environ.get("PORT", 10000))
-    
-    # വെബ് സർവർ സെറ്റപ്പ് (Render ബോട്ട് ലൈവ് ആണോ എന്ന് ചെക്ക് ചെയ്യാൻ ഇത് നോക്കും)
+    # Render പോർട്ട് ചെക്കിംഗ് ഒഴിവാക്കാൻ ഈ വരികൾ സഹായിക്കും
     runner = web.AppRunner(app)
     await runner.setup()
+    port = int(os.environ.get("PORT", 10000))
     site = web.TCPSite(runner, '0.0.0.0', port)
     await site.start()
     
-    print(f"Server started on port {port}") # ലോഗ്സിൽ ഇത് കാണാൻ പറ്റും
-    
-    # ബോട്ട് പോളിംഗ് സ്റ്റാർട്ട് ചെയ്യുന്നു
-    try:
-        await dp.start_polling(bot)
-    finally:
-        await bot.session.close()
+    print(f"Bot logic is running on port {port}...")
+    await dp.start_polling(bot)
 
 if __name__ == '__main__':
     asyncio.run(main())
