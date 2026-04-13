@@ -12,7 +12,7 @@ from aiohttp import web
 API_TOKEN = '8779215618:AAGrO46Vahb7tP2SGwL0GHV2uLpgbK9oi3Y'
 ADMIN_ID = 8539013019
 MONGO_URL = "mongodb+srv://BIBIN:Bibin123@cluster0.mnpq2pv.mongodb.net/?retryWrites=true&w=majority"
-GEMINI_API_KEY = "AIzaSyBwhgq6UKAq8erxejPhmx8fJFqR3NR5aVw" # ഇവിടെ നിങ്ങളുടെ Gemini API Key ചേർക്കുക
+GEMINI_API_KEY = "AIzaSyBwhgq6UKAq8erxejPhmx8fJFqR3NR5aVw"
 
 # Gemini Setup & Personality (Female Character)
 genai.configure(api_key=GEMINI_API_KEY)
